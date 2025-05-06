@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold;
+  }
+  p {
+    @apply text-sm;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[80rem] mx-auto w-full px-[1.5rem];
+  }
+  .header {
+    @apply fixed w-full mt-[0.7rem] z-10;
+  }
+  .header__wrapper {
+    @apply flex items-center justify-between;
+  }
+  .header__navd {
+    @apply hidden md:flex flex-row gap-[1.5rem] items-center  text-base items-center text-gray-700;
+  }
+  .header__navm {
+    @apply md:hidden absolute bg-bglightGray top-[4.4rem]  w-full h-[100rem] right-[-100rem] flex flex-col gap-[1rem] items-center text-gray-700  text-base pt-[3rem] transition-all  ease-in-out duration-700;
+  }
+  .header__navm.open {
+    @apply right-0 transition-all  ease-in-out duration-700;
+  }
+  .burger__menu {
+    @apply block md:hidden cursor-pointer;
+  }
+  .burger__menu span {
+    @apply block w-[25px] h-[4px]  bg-primaryBlue rounded-md transition-all  ease-in-out duration-500;
+  }
+  .burger__menu span:nth-child(2) {
+    @apply my-[3px] transition-all  ease-in-out duration-500;
+  }
+  .burger__menu.open span:first-child {
+    @apply transform translate-y-[5px] rotate-[40deg] transition-all  ease-in-out duration-500;
+  }
+  .burger__menu.open span:nth-child(2) {
+    @apply opacity-0 transition-all  ease-in-out duration-500;
+  }
+  .burger__menu.open span:last-child {
+    @apply transform translate-y-[-9px] rotate-[-40deg] transition-all ease-in-out duration-500;
+  }
+
+  /* about */
+  .aboutBanner__item {
+    @apply flex flex-col md:flex-row md:items-center justify-between;
+  }
+  .aboutBanner__info {
+    @apply max-w-[35rem];
+  }
+  .aboutBanner__item:nth-child(even) {
+    @apply md:flex-row-reverse py-[5rem];
+  }
+}
+
+@layer uttilities {
+  .btn {
+    @apply inline-block py-[8px] px-[16px] bg-transparent rounded-md !text-light;
+  }
+  .btn.bg--buttonBlue {
+    @apply bg-primaryBlue hover:bg-hoverBlue;
+  }
+  .btn.bg--buttonYellow {
+    @apply bg-secondaryYellow hover:bg-hoverYellow;
+  }
+}

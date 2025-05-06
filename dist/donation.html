@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header py-[1rem] bg-bglightGray font-poppins top-[1rem]">
+      <div
+        class="header__top bg-primaryBlue py-[5px] text-light fixed w-full top-0"
+      >
+        <div class="max-w-[80rem] mx-auto w-full px-[1.5rem]">
+          <ul class="flex justify-end gap-[1rem] text-[12px]">
+            <li><a href="">Visit Philippine Frontline Ministries</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__branding">
+            <img src="./img/FTC logo.svg" alt="FTC-logo" />
+          </div>
+
+          <ul class="header__navd">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./strategy.html">Strategy</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./sponsor.html">Sponsor Child</a></li>
+            <a
+              href="./donation.html"
+              class="btn bg--buttonBlue text-light text-[12px]"
+              >Donate</a
+            >
+          </ul>
+
+          <ul class="header__navm">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./strategy.html">STRATEGY</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./sponsor.html">SPONSOR CHILD</a></li>
+            <a
+              href="./donation.html"
+              class="btn bg--buttonBlue text-light text-[12px]"
+              >Donate</a
+            >
+          </ul>
+          <div class="burger__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="donation mt-[5rem] py-[5rem]">
+      <div class="container">
+        <div class="donation__wrapper">
+          <div class="donation__item mx-auto shadow-lg max-w-[18rem]">
+            <img src="./img/sponsor-child-opt.jpg" alt="" class="w-full" />
+            <div class="p-[0.5rem]">
+              <h3 class="text-[clamp(18px,4vw,30px)] text-dark mb-[1rem]">
+                Children Sponsorship
+              </h3>
+              <div class="max-w-[15rem] mb-[3rem]">
+                <small class="text-[14px] text-dark"
+                  >Making a difference for abandoned, abused, or dangerously
+                  neglected children.</small
+                >
+              </div>
+              <div>
+                <p><i class="fa-regular fa-circle-arrow-right"></i> Read More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gift py-[3rem] font-poppins bg-bglightGray">
+      <div class="container">
+        <div class="gift__wrapper text-center">
+          <small class="uppercase 12px text-secondaryYellow"
+            >Every Gift Counts
+          </small>
+          <h3 class="text-[clamp(18px,4vw,30px)] text-dark mb-[1rem]">
+            Together, We Make a Difference
+          </h3>
+          <p class="text-base text-dark">
+            Together, we lend a helping hand to those in need, offering hope and
+            support where it's needed most. From volunteering our time to
+            donating resources, each act of kindness strengthens our community
+            fabric.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-primaryBlue py-[5px] text-light font-poppins">
+      <div class="container">
+        <div class="footer__wrapper flex justify-between">
+          <small class="text-[10px] text-light"
+            >&copy; 2024 Face the Children</small
+          >
+          <small class="text-[10px] text-light"
+            >Philippine Frontline Ministries</small
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

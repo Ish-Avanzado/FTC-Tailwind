@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header py-[1rem] bg-bglightGray font-poppins top-[1rem]">
+      <div
+        class="header__top bg-primaryBlue py-[5px] text-light fixed w-full top-0"
+      >
+        <div class="max-w-[80rem] mx-auto w-full px-[1.5rem]">
+          <ul class="flex justify-end gap-[1rem] text-[12px]">
+            <li><a href="">Visit Philippine Frontline Ministries</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__branding">
+            <img src="./img/FTC logo.svg" alt="FTC-logo" />
+          </div>
+
+          <ul class="header__navd">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./strategy.html">Strategy</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./sponsor.html">Sponsor Child</a></li>
+            <a href="./donation.html" class="btn bg--buttonBlue text-light text-[12px]"
+              >Donate</a
+            >
+          </ul>
+
+          <ul class="header__navm">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./strategy.html">STRATEGY</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./sponsor.html">SPONSOR CHILD</a></li>
+            <a href="./donation.html" class="btn bg--buttonBlue text-light text-[12px]">Donate</a>
+          </ul>
+          <div class="burger__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact mt-[5rem] py-[5rem] font-poppins">
+      <div class="container">
+        <div
+          class="contact__wrapper flex flex-col gap-[5rem] md:gap-[0rem] md:flex-row md:justify-around"
+        >
+          <div class="contact__details max-w-[33rem]">
+            <small class="uppercase 12px text-secondaryYellow"
+              >Let's Talk
+            </small>
+            <h3
+              class="text-[clamp(18px,4vw,30px)] text-primaryBlue mb-[1rem] font-semibold"
+            >
+              We're Here for You
+            </h3>
+            <p class="text-base text-dark mb-[3rem]">
+              We believe in building strong relationships and fostering a sense
+              of community. Your feedback and inquiries are important to us, and
+              we strive to respond as quickly and thoroughly as possible.
+            </p>
+            <p class="text-base text-dark mb-[1rem]">
+              Feel free to get in touch with us via phone
+            </p>
+            <h4
+              class="text-[14px] text-primaryBlue flex flex-col md:flex-row md:gap-[1rem] mb-[3rem]"
+            >
+              <span>Philippines: +63 927 420 3409 </span> USA +815 797 9177
+            </h4>
+            <p class="text-base text-dark mb-[1rem]">
+              Visit us here in the Philippines
+            </p>
+            <h4 class="text-[14px] text-primaryBlue">
+              Frontline Mission Center, Sitio Subac, <br />
+              Brgy. Sto Nino, San Pablo City, 4000 Laguna
+            </h4>
+          </div>
+          <div class="contact__message max-w-[30rem] w-full">
+            <form action="">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-10px] left-[10px] bg-light text-primaryBlue"
+                >
+                  Name
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-10px] left-[10px] bg-light text-primaryBlue"
+                >
+                  Email
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-10px] left-[10px] bg-light text-primaryBlue"
+                >
+                  Phone
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-10px] left-[10px] bg-light text-primaryBlue"
+                >
+                  Subject
+                </small>
+              </div>
+
+              <div class="relative">
+                <textarea
+                  class="w-full h-[15rem] flex flex-col mb-[1.5rem] border-[1px] border-gray-300 rounded-md px-[10px] py-[8px] outline-none resize-none"
+                ></textarea>
+                <small
+                  class="absolute top-[-10px] left-[10px] bg-light text-primaryBlue"
+                >
+                  Message
+                </small>
+              </div>
+            </form>
+            <div
+              class="bg-bglightGray p-[10px] max-w-[20rem] w-full border-[1px] border-gray-300 flex flex-row items-center justify-between rounded-sm"
+            >
+              <div class="flex gap-[1rem] items-center">
+                <form action="">
+                  <input
+                    type="checkbox"
+                    class="w-[2rem] h-[2rem] border-[2px] border-dark hover:border-gray-400 appearance-none rounded-sm"
+                  />
+                </form>
+                <p>I'm not a robot</p>
+              </div>
+              <div class="flex flex-col place-items-center">
+                <img
+                  src="./img/logo_48 (1).png"
+                  alt="CAPTCHA"
+                  class="w-[2rem]"
+                />
+                <small class="text-[10px]">reCAPTCHA</small>
+                <small class="text-[10px]">Privacy-Terms</small>
+              </div>
+            </div>
+            <div class="mt-[2rem] opacity-50">
+              <a href="" class="btn bg--buttonYellow text-[12px]">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactTeam font-poppins py-[5rem]">
+      <div class="container">
+        <div class="text-center  mb-[3rem]">
+          <small class="uppercase 12px text-secondaryYellow"
+            >Get to Know Us
+          </small>
+          <h3
+            class="text-[clamp(18px,4vw,30px)] text-primaryBlue mb-[1rem] font-semibold"
+          >
+            Our Dedicated Team
+          </h3>
+        </div>
+        <div class="contactTeam__wrapper flex flex-col md:flex-row md:justify-center gap-[2rem]  md:gap-[5rem]">
+          <div class="contactTeam__profile place-items-center text-center">
+            <img src="./img/team-judea.webp" alt="judea-photo" class="mb-[1rem] max-w-[15rem]  max-h-[15rem]  w-full h-full "/>
+            <h4 class="text-primaryBlue font-bold">Judea Delos Santos</h4>
+            <div class="flex flex-col">
+              <small class="italic">Communication & Development Staff</small>
+              <small class="text-primaryBlue">judea.delossantos@thefrontline.asia</small>
+            </div>
+          </div>
+          <div class="contactTeam__profile place-items-center  text-center">
+            <img src="./img/team-mike.webp" alt="michael-photo" class="mb-[1rem] max-w-[15rem]  max-h-[15rem]  w-full h-full "/>
+            <h4 class="text-primaryBlue font-bold">Michael Gordon</h4>
+            <div class="flex flex-col">
+              <small class="italic">Spiritual Director</small>
+              <small class="text-primaryBlue">mike.gordon@thefrontline.asia</small>
+            </div>
+          </div>
+          <div class="contactTeam__profile place-items-center text-center">
+            <img src="./img/team-jp.webp" alt="john-photo" class="mb-[1rem] max-w-[15rem]  max-h-[15rem]  w-full h-full "/>
+            <h4 class="text-primaryBlue font-bold">John Katigbak</h4>
+            <div class="flex flex-col">
+              <small class="italic">Managing Director</small>
+              <small class="text-primaryBlue">john.katigbak@thefrontline.asia</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-primaryBlue py-[5px] text-light font-poppins">
+      <div class="container">
+        <div class="footer__wrapper flex justify-between">
+          <small class="text-[10px] text-light"
+            >&copy; 2024 Face the Children</small
+          >
+          <small class="text-[10px] text-light"
+            >Philippine Frontline Ministries</small
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
