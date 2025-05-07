@@ -18,7 +18,7 @@
       <div
         class="header__top bg-primaryBlue py-[5px] text-light fixed w-full top-0"
       >
-        <div class="max-w-[80rem] mx-auto w-full px-[1.5rem]">
+        <div class="max-w-[90rem] mx-auto w-full px-[1.5rem]">
           <ul class="flex justify-end gap-[1rem] text-[12px]">
             <li><a href="">Visit Philippine Frontline Ministries</a></li>
             <li><a href="">Login</a></li>
@@ -34,11 +34,13 @@
           <ul class="header__navd">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./faq.html" class="active">FAQ</a></li>
             <li><a href="./strategy.html">Strategy</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./sponsor.html">Sponsor Child</a></li>
-            <a href="./donation.html" class="btn bg--buttonBlue text-light text-[12px]"
+            <a
+              href="./donation.html"
+              class="btn bg--buttonBlue text-light text-[12px]"
               >Donate</a
             >
           </ul>
@@ -46,11 +48,15 @@
           <ul class="header__navm">
             <li><a href="./home.html">HOME</a></li>
             <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./faq.html" class="active">FAQ</a></li>
             <li><a href="./strategy.html">STRATEGY</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
             <li><a href="./sponsor.html">SPONSOR CHILD</a></li>
-            <a href="./donation.html" class="btn bg--buttonBlue text-light text-[12px]">Donate</a>
+            <a
+              href="./donation.html"
+              class="btn bg--buttonBlue text-light text-[12px]"
+              >Donate</a
+            >
           </ul>
           <div class="burger__menu">
             <span></span>
@@ -61,7 +67,343 @@
       </div>
     </header>
 
-    <section class="gift py-[3rem] font-poppins bg-bglightGray">
+    <section class="faq mt-[5rem] py-[5rem] font-poppins bg-light">
+      <div class="container">
+        <div class="text-center md:py-[5rem]">
+          <small class="uppercase text-[12px] text-secondaryYellow">
+            Your Questions, Our Clarity
+          </small>
+          <h1
+            class="text-[clamp(28px,4vw,45px)] text-dark mb-[1rem] max-w-[20rem] mx-auto md:max-w-none"
+          >
+            Our Commitment to Child Development
+          </h1>
+        </div>
+
+        <div class="faq__wrapper flex flex-col gap-[2rem] md:px-[5rem]">
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">01</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  Can I communicate with the child I have made a Pledge to?
+                </p>
+              </div>
+
+              <div class="block md:hidden ">
+                <i class="fa-solid fa-chevron-down text-dark "></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark">
+                Yes. You can email them, but all communication is monitored by
+                FTC management.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">02</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  How can you make sure our payment is secure?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark">
+                Our online donation transaction is a secure SSL encrypted
+                payment using Stripe payment processor with the best-in-class
+                security tools and practices to maintain a high level of
+                security.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">03</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  Can I update my card number using your website?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark max-w-[20rem]">
+                Yes. You can change it on your account settings. Login to your
+                donor console
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">04</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  Will I receive personal updates from FTC and the child I
+                  pledge to on a regular basis?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark">
+                Yes, you will receive regular updates about the progress and
+                developments of our program. Additionally, from time to time you
+                will receive communications directly from the child you sponsor.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">05</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  Can I make a pledge to more than one FTC Child?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark max-w-[16.5rem]">
+                Yes. We welcome your pledges to as many children as possible!
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">06</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  Can I make a Partner Pledge for the entire monthly care of a
+                  child in the FTC program?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark max-w-[22rem]">
+                Yes. But the full-care sponsorship of a child in our program is
+                limited to $200 monthly. Therefore, if a child has current
+                sponsorship pledges, the website will allow only the remaining
+                balance necessary for full-care coverage.
+              </p>
+            </div>
+          </div>
+          <div
+            class="faq__item flex flex-col md:flex-row md:justify-between gap-[1rem]"
+          >
+            <div
+              class="faq__nav flex justify-between items-center border-[1px] px-[0.5rem] py-[0.7rem] rounded-md"
+            >
+              <div class="flex flex-row items-center gap-[1rem]">
+                <h3 class="text-[22px] text-dark opacity-50">07</h3>
+                <p class="text-[16px] max-w-[22rem] md:max-w-[35rem] text-dark">
+                  How much does an FTC Child Partner Pledge Cost?
+                </p>
+              </div>
+
+              <div class="block md:hidden">
+                <i class="fa-solid fa-chevron-down text-dark"></i>
+              </div>
+              <div class="hidden md:block">
+                <i class="fa-solid fa-chevron-right text-dark"></i>
+              </div>
+            </div>
+            <div
+              class="faq__pop border-[1px] border-primaryBlue px-[0.5rem] py-[0.7rem] rounded-md max-w-[26rem]"
+            >
+              <p class="text-[16px] text-dark max-w-[22rem]">
+                You can partner with us by sponsoring a child for as little as
+                $20 monthly. You can also select higher sponsorship amounts if
+                the child has remaining full-care needs. Please see the options
+                presented for a selected child on the sponsorship page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-[3rem] font-poppins bg-bglightGray">
+      <div class="container">
+        <div
+          class="contact__wrapper flex flex-col gap-[5rem] md:gap-[0rem] md:flex-row md:justify-around"
+        >
+          <div class="contact__details max-w-[33rem]">
+            <small class="uppercase 12px text-secondaryYellow"
+              >Fequently Asked Question
+            </small>
+            <h3
+              class="text-[clamp(18px,4vw,30px)] text-primaryBlue mb-[1rem] font-semibold"
+            >
+              Can't find what you are looking for?
+            </h3>
+            <p class="text-base text-dark mb-[3rem]">
+              If your questions is not listed above, you can use the form to
+              send directly to us your questions
+            </p>
+          </div>
+          <div class="contact__message max-w-[30rem] w-full">
+            <form action="">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] bg-bglightGray border-gray-300 rounded-md px-[10px] py-[8px] outline-[35rem]"
+                />
+                <small
+                  class="absolute top-[-9px] left-[10px] bg-transparent text-primaryBlue"
+                >
+                  Name
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] bg-bglightGray border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-9px] left-[10px] bg-transparent text-primaryBlue"
+                >
+                  Email
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] bg-bglightGray border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-9px] left-[10px] bg-transparent text-primaryBlue"
+                >
+                  Phone
+                </small>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="w-full flex flex-col mb-[1.5rem] border-[1px] bg-bglightGray border-gray-300 rounded-md px-[10px] py-[8px] outline-none"
+                />
+                <small
+                  class="absolute top-[-9px] left-[10px] bg-transparent text-primaryBlue"
+                >
+                  Subject
+                </small>
+              </div>
+
+              <div class="relative">
+                <textarea
+                  class="w-full h-[15rem] flex flex-col mb-[1.5rem] border-[1px] bg-bglightGray border-gray-300 rounded-md px-[10px] py-[8px] outline-none resize-none"
+                ></textarea>
+                <small
+                  class="absolute top-[-9px] left-[10px] bg-transparent text-primaryBlue"
+                >
+                  Message
+                </small>
+              </div>
+            </form>
+            <div
+              class="bg-light p-[10px] max-w-[20rem] w-full border-[1px]  border-gray-300 flex flex-row items-center justify-between rounded-sm"
+            >
+              <div class="flex gap-[1rem] items-center">
+                <form action="">
+                  <input
+                    type="checkbox"
+                    class="w-[2rem] h-[2rem] border-[2px] border-dark hover:border-gray-400 appearance-none rounded-sm"
+                  />
+                </form>
+                <p>I'm not a robot</p>
+              </div>
+              <div class="flex flex-col place-items-center">
+                <img
+                  src="./img/logo_48 (1).png"
+                  alt="CAPTCHA"
+                  class="w-[2rem]"
+                />
+                <small class="text-[10px]">reCAPTCHA</small>
+                <small class="text-[10px]">Privacy-Terms</small>
+              </div>
+            </div>
+            <div class="mt-[2rem] opacity-50">
+              <a href="" class="btn bg--buttonYellow text-[12px]">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift mt-[10rem] py-[3rem] font-poppins bg-light">
       <div class="container">
         <div class="gift__wrapper text-center">
           <small class="uppercase 12px text-secondaryYellow"
@@ -70,7 +412,7 @@
           <h3 class="text-[clamp(18px,4vw,30px)] text-dark mb-[1rem]">
             Together, We Make a Difference
           </h3>
-          <p class="text-base text-dark">
+          <p class="text-base text-dark max-w-[36rem] mx-auto">
             Together, we lend a helping hand to those in need, offering hope and
             support where it's needed most. From volunteering our time to
             donating resources, each act of kindness strengthens our community

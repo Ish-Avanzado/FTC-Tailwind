@@ -8,7 +8,8 @@
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     @apply font-semibold;
   }
   p {
@@ -18,7 +19,7 @@
 
 @layer components {
   .container {
-    @apply max-w-[80rem] mx-auto w-full px-[1.5rem];
+    @apply max-w-[90rem] mx-auto w-full px-[1.5rem];
   }
   .header {
     @apply fixed w-full mt-[0.7rem] z-10;
@@ -26,11 +27,16 @@
   .header__wrapper {
     @apply flex items-center justify-between;
   }
+
+  .header__navd li a.active,
+  .header__navm li a.active {
+    @apply text-secondaryYellow;
+  }
   .header__navd {
     @apply hidden md:flex flex-row gap-[1.5rem] items-center  text-base items-center text-gray-700;
   }
   .header__navm {
-    @apply md:hidden absolute bg-bglightGray top-[4.4rem]  w-full h-[100rem] right-[-100rem] flex flex-col gap-[1rem] items-center text-gray-700  text-base pt-[3rem] transition-all  ease-in-out duration-700;
+    @apply md:hidden absolute bg-bglightGray top-[4.4rem]  w-full h-[100rem] right-[-100rem] flex flex-col gap-[1.5rem] items-center text-gray-700  text-base pt-[3rem] transition-all  ease-in-out duration-700;
   }
   .header__navm.open {
     @apply right-0 transition-all  ease-in-out duration-700;
@@ -59,21 +65,50 @@
     @apply flex flex-col md:flex-row md:items-center justify-between;
   }
   .aboutBanner__info {
-    @apply max-w-[35rem];
+    @apply max-w-[38rem];
   }
   .aboutBanner__item:nth-child(even) {
     @apply md:flex-row-reverse py-[5rem];
   }
 }
 
+/* faq */
+.faq__item {
+  @apply md:relative;
+}
+.faq__nav {
+  @apply md:max-w-[40rem] w-full md:max-h-[8rem] h-full;
+}
+
+.faq__nav.active {
+  @apply border-primaryBlue text-primaryBlue;
+}
+
+.faq__nav.active p,
+.faq__nav.active h3,
+.faq__nav.active i {
+  @apply text-primaryBlue;
+}
+
+.faq__pop {
+  @apply md:max-w-[30rem] w-full hidden overflow-hidden transition-all duration-300 bg-bglightGray;
+}
+
+.faq__pop.open {
+  @apply md:absolute md:right-0 block overflow-hidden md:overflow-visible  transition-all duration-300;
+}
+
 @layer uttilities {
   .btn {
-    @apply inline-block py-[8px] px-[16px] bg-transparent rounded-md !text-light;
+    @apply inline-block py-[8px] px-[25px] bg-transparent rounded-md !text-light;
   }
   .btn.bg--buttonBlue {
     @apply bg-primaryBlue hover:bg-hoverBlue;
   }
   .btn.bg--buttonYellow {
+    @apply bg-secondaryYellow hover:bg-hoverYellow;
+  }
+  .btn.bg--buttonBlue.active {
     @apply bg-secondaryYellow hover:bg-hoverYellow;
   }
 }
