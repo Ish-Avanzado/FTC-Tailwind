@@ -77,7 +77,7 @@
   @apply md:relative;
 }
 .faq__nav {
-  @apply md:max-w-[40rem] w-full md:max-h-[8rem] h-full ;
+  @apply md:max-w-[40rem] w-full md:max-h-[8rem] h-full;
 }
 
 .faq__nav.active {
@@ -109,7 +109,7 @@
   @apply opacity-100 max-h-[100%] overflow-hidden;
 }
 .resident__profile img {
-  @apply h-[25rem] object-cover
+  @apply h-[25rem] object-cover;
 }
 
 @layer uttilities {

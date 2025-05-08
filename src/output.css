@@ -1505,6 +1505,7 @@ p{
   .faq__pop.active{
     position: absolute;
     right: 0px;
+    top: 0px;
     overflow: visible;
   }
 }
@@ -1692,35 +1693,11 @@ p{
     max-width: 25rem;
   }
 
-  .lg\:max-w-\[38rem\]{
-    max-width: 38rem;
+  .lg\:max-w-\[34rem\]{
+    max-width: 34rem;
   }
 
   .lg\:max-w-\[40rem\]{
     max-width: 40rem;
-  }
-
-  .lg\:max-w-\[35rem\]{
-    max-width: 35rem;
-  }
-
-  .lg\:max-w-\[36rem\]{
-    max-width: 36rem;
-  }
-
-  .lg\:max-w-\[3rem\]{
-    max-width: 3rem;
-  }
-
-  .lg\:max-w-\[32rem\]{
-    max-width: 32rem;
-  }
-
-  .lg\:max-w-\[33rem\]{
-    max-width: 33rem;
-  }
-
-  .lg\:max-w-\[34rem\]{
-    max-width: 34rem;
   }
 }
