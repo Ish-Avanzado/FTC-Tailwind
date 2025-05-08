@@ -1438,10 +1438,6 @@ p{
   outline-offset: 2px;
 }
 
-.outline-\[35rem\]{
-  outline-width: 35rem;
-}
-
 /* faq */
 
 @media (min-width: 768px){
@@ -1625,6 +1621,10 @@ p{
     display: none;
   }
 
+  .md\:max-w-\[20rem\]{
+    max-width: 20rem;
+  }
+
   .md\:max-w-\[30rem\]{
     max-width: 30rem;
   }
@@ -1635,14 +1635,6 @@ p{
 
   .md\:max-w-none{
     max-width: none;
-  }
-
-  .md\:max-w-\[25rem\]{
-    max-width: 25rem;
-  }
-
-  .md\:max-w-\[20rem\]{
-    max-width: 20rem;
   }
 
   .md\:flex-row{
