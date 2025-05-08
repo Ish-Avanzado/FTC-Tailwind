@@ -19,10 +19,11 @@ faqNavs.forEach((nav) => {
       }
     });
 
-    FaqPop.classList.toggle("active");
-    nav.classList.toggle("active");
+    FaqPop.classList.add("active");
+    nav.classList.add("active");
   });
 });
+
 
 const residentNav = document.querySelectorAll(".resident__nav");
 const residentItem = document.querySelectorAll(".resident__item");
@@ -34,7 +35,7 @@ residentNav.forEach((Nav) => {
 
     const Item = document.querySelector(`#${Nav.id}-content`);
     removeActiveItem();
-    Item.classList.add("active"); 
+    Item.classList.add("active");
   });
 });
 
@@ -49,4 +50,3 @@ function removeActiveItem() {
     item.classList.remove("active");
   });
 }
-
