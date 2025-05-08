@@ -745,6 +745,7 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 @media (min-width: 768px){
@@ -752,10 +753,16 @@ p{
     flex-direction: row;
     align-items: center;
   }
+
+  .aboutBanner__info{
+    max-width: 25rem;
+  }
 }
 
-.aboutBanner__info{
-  max-width: 38rem;
+@media (min-width: 1024px){
+  .aboutBanner__info{
+    max-width: 40rem;
+  }
 }
 
 .aboutBanner__item:nth-child(even){
@@ -781,6 +788,10 @@ p{
   position: relative;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-\[10px\]{
   left: 10px;
 }
@@ -797,6 +808,10 @@ p{
   top: 1rem;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -804,6 +819,10 @@ p{
 
 .mb-\[1\.5rem\]{
   margin-bottom: 1.5rem;
+}
+
+.mb-\[10rem\]{
+  margin-bottom: 10rem;
 }
 
 .mb-\[1rem\]{
@@ -814,12 +833,20 @@ p{
   margin-bottom: 2rem;
 }
 
+.mb-\[3\.5rem\]{
+  margin-bottom: 3.5rem;
+}
+
 .mb-\[3rem\]{
   margin-bottom: 3rem;
 }
 
 .mb-\[5rem\]{
   margin-bottom: 5rem;
+}
+
+.ml-\[5px\]{
+  margin-left: 5px;
 }
 
 .mt-\[1\.5rem\]{
@@ -858,6 +885,10 @@ p{
   height: 2rem;
 }
 
+.h-\[3rem\]{
+  height: 3rem;
+}
+
 .h-full{
   height: 100%;
 }
@@ -874,8 +905,28 @@ p{
   max-height: 40rem;
 }
 
+.w-\[10\%\]{
+  width: 10%;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[17\.50\%\]{
+  width: 17.50%;
+}
+
 .w-\[20rem\]{
   width: 20rem;
+}
+
+.w-\[25\%\]{
+  width: 25%;
+}
+
+.w-\[27\.50\%\]{
+  width: 27.50%;
 }
 
 .w-\[2rem\]{
@@ -884,6 +935,62 @@ p{
 
 .w-\[30rem\]{
   width: 30rem;
+}
+
+.w-\[35\%\]{
+  width: 35%;
+}
+
+.w-\[37\.50\%\]{
+  width: 37.50%;
+}
+
+.w-\[40\%\]{
+  width: 40%;
+}
+
+.w-\[42\%\]{
+  width: 42%;
+}
+
+.w-\[45\%\]{
+  width: 45%;
+}
+
+.w-\[5\%\]{
+  width: 5%;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[52\.50\%\]{
+  width: 52.50%;
+}
+
+.w-\[57\%\]{
+  width: 57%;
+}
+
+.w-\[57\.50\%\]{
+  width: 57.50%;
+}
+
+.w-\[60\%\]{
+  width: 60%;
+}
+
+.w-\[6100\%\]{
+  width: 6100%;
+}
+
+.w-\[62\.50\%\]{
+  width: 62.50%;
+}
+
+.w-\[85\%\]{
+  width: 85%;
 }
 
 .w-full{
@@ -1016,6 +1123,10 @@ p{
   gap: 2rem;
 }
 
+.gap-\[3rem\]{
+  gap: 3rem;
+}
+
 .gap-\[5rem\]{
   gap: 5rem;
 }
@@ -1026,6 +1137,10 @@ p{
 
 .place-self-center{
   place-self: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -1086,13 +1201,27 @@ p{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-lightOrange{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 188 101 / var(--tw-bg-opacity, 1));
+}
+
 .bg-primaryBlue{
   --tw-bg-opacity: 1;
   background-color: rgb(62 155 208 / var(--tw-bg-opacity, 1));
 }
 
+.bg-secondaryYellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 152 39 / var(--tw-bg-opacity, 1));
+}
+
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-blackOverlay{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%);
 }
 
 .object-cover{
@@ -1103,6 +1232,10 @@ p{
 .object-fill{
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.p-\[0\.5rem\]{
+  padding: 0.5rem;
 }
 
 .p-\[10px\]{
@@ -1126,6 +1259,11 @@ p{
 .px-\[10px\]{
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.px-\[3rem\]{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-\[0\.7rem\]{
@@ -1163,6 +1301,10 @@ p{
   padding-bottom: 8px;
 }
 
+.pb-\[5px\]{
+  padding-bottom: 5px;
+}
+
 .pt-\[1rem\]{
   padding-top: 1rem;
 }
@@ -1191,8 +1333,16 @@ p{
   font-size: 14px;
 }
 
+.text-\[15px\]{
+  font-size: 15px;
+}
+
 .text-\[16px\]{
   font-size: 16px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
 }
 
 .text-\[20px\]{
@@ -1232,12 +1382,12 @@ p{
   font-weight: 700;
 }
 
-.font-semibold{
-  font-weight: 600;
+.font-light{
+  font-weight: 300;
 }
 
-.font-extrabold{
-  font-weight: 800;
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -1256,6 +1406,11 @@ p{
 .text-light{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-lightGray{
+  --tw-text-opacity: 1;
+  color: rgb(137 137 134 / var(--tw-text-opacity, 1));
 }
 
 .text-primaryBlue{
@@ -1338,7 +1493,7 @@ p{
   }
 }
 
-.faq__pop.open{
+.faq__pop.active{
   display: block;
   overflow: hidden;
   transition-property: all;
@@ -1347,11 +1502,39 @@ p{
 }
 
 @media (min-width: 768px){
-  .faq__pop.open{
+  .faq__pop.active{
     position: absolute;
     right: 0px;
     overflow: visible;
   }
+}
+
+/* sponsorfaq */
+
+.resident__nav.active{
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(252 152 39 / var(--tw-border-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(58 59 54 / var(--tw-text-opacity, 1));
+}
+
+.resident__item{
+  max-height: 0rem;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.resident__item.active{
+  max-height: 100%;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.resident__profile img{
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @layer uttilities {
@@ -1363,6 +1546,7 @@ p{
     padding-bottom: 8px;
     padding-left: 25px;
     padding-right: 25px;
+    font-size: 12px;
     --tw-text-opacity: 1 !important;
     color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
   }
@@ -1408,10 +1592,24 @@ p{
   color: rgb(209 118 0 / var(--tw-text-opacity, 1));
 }
 
+.group:hover .group-hover\:bg-primaryBlue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 155 208 / var(--tw-bg-opacity, 1));
+}
+
+.group:hover .group-hover\:text-light{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 @media (min-width: 768px){
   .md\:mx-\[5rem\]{
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .md\:mb-\[0rem\]{
+    margin-bottom: 0rem;
   }
 
   .md\:block{
@@ -1490,7 +1688,39 @@ p{
 }
 
 @media (min-width: 1024px){
+  .lg\:max-w-\[25rem\]{
+    max-width: 25rem;
+  }
+
+  .lg\:max-w-\[38rem\]{
+    max-width: 38rem;
+  }
+
   .lg\:max-w-\[40rem\]{
     max-width: 40rem;
+  }
+
+  .lg\:max-w-\[35rem\]{
+    max-width: 35rem;
+  }
+
+  .lg\:max-w-\[36rem\]{
+    max-width: 36rem;
+  }
+
+  .lg\:max-w-\[3rem\]{
+    max-width: 3rem;
+  }
+
+  .lg\:max-w-\[32rem\]{
+    max-width: 32rem;
+  }
+
+  .lg\:max-w-\[33rem\]{
+    max-width: 33rem;
+  }
+
+  .lg\:max-w-\[34rem\]{
+    max-width: 34rem;
   }
 }

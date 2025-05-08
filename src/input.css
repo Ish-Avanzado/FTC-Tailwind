@@ -62,10 +62,10 @@
 
   /* about */
   .aboutBanner__item {
-    @apply flex flex-col md:flex-row md:items-center justify-between;
+    @apply flex flex-col md:flex-row md:items-center justify-between gap-[2rem];
   }
   .aboutBanner__info {
-    @apply max-w-[38rem];
+    @apply md:max-w-[25rem] lg:max-w-[40rem];
   }
   .aboutBanner__item:nth-child(even) {
     @apply md:flex-row-reverse py-[5rem];
@@ -77,7 +77,7 @@
   @apply md:relative;
 }
 .faq__nav {
-  @apply md:max-w-[40rem] w-full md:max-h-[8rem] h-full;
+  @apply md:max-w-[40rem] w-full md:max-h-[8rem] h-full ;
 }
 
 .faq__nav.active {
@@ -94,13 +94,27 @@
   @apply md:max-w-[30rem] w-full hidden overflow-hidden transition-all duration-300 bg-bglightGray;
 }
 
-.faq__pop.open {
+.faq__pop.active {
   @apply md:absolute md:right-0 block overflow-hidden md:overflow-visible  transition-all duration-300;
+}
+
+/* sponsorfaq */
+.resident__nav.active {
+  @apply text-dark border-b-[4px] border-secondaryYellow;
+}
+.resident__item {
+  @apply opacity-0 max-h-[0rem] overflow-hidden;
+}
+.resident__item.active {
+  @apply opacity-100 max-h-[100%] overflow-hidden;
+}
+.resident__profile img {
+  @apply h-[25rem] object-cover
 }
 
 @layer uttilities {
   .btn {
-    @apply inline-block py-[8px] px-[25px] bg-transparent rounded-md !text-light;
+    @apply inline-block py-[8px] px-[25px] bg-transparent rounded-md !text-light text-[12px];
   }
   .btn.bg--buttonBlue {
     @apply bg-primaryBlue hover:bg-hoverBlue;

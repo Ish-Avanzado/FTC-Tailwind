@@ -15,7 +15,6 @@ burger.addEventListener("click", () => {
 //   });
 // });
 
-
 const faqNavs = document.querySelectorAll(".faq__nav");
 
 faqNavs.forEach((nav) => {
@@ -25,12 +24,39 @@ faqNavs.forEach((nav) => {
 
     document.querySelectorAll(".faq__pop").forEach((pop) => {
       if (pop !== FaqPop) {
-        pop.classList.remove("open");
+        pop.classList.remove("active");
         pop.previousElementSibling.classList.remove("active");
       }
     });
 
-    FaqPop.classList.toggle("open");
+    FaqPop.classList.toggle("active");
     nav.classList.toggle("active");
   });
 });
+
+const residentNav = document.querySelectorAll(".resident__nav");
+const residentItem = document.querySelectorAll(".resident__item");
+
+residentNav.forEach((Nav) => {
+  Nav.addEventListener("click", () => {
+    removeActiveNav();
+    Nav.classList.add("active");
+
+    const Item = document.querySelector(`#${Nav.id}-content`);
+    removeActiveItem();
+    Item.classList.add("active"); 
+  });
+});
+
+function removeActiveNav() {
+  residentNav.forEach((Nav) => {
+    Nav.classList.remove("active");
+  });
+}
+
+function removeActiveItem() {
+  residentItem.forEach((item) => {
+    item.classList.remove("active");
+  });
+}
+
