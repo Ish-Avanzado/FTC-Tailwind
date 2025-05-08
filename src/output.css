@@ -865,10 +865,6 @@ p{
   margin-top: 5rem;
 }
 
-.mb-\[\]{
-  margin-bottom: ;
-}
-
 .block{
   display: block;
 }
@@ -1639,6 +1635,14 @@ p{
 
   .md\:max-w-none{
     max-width: none;
+  }
+
+  .md\:max-w-\[25rem\]{
+    max-width: 25rem;
+  }
+
+  .md\:max-w-\[20rem\]{
+    max-width: 20rem;
   }
 
   .md\:flex-row{
